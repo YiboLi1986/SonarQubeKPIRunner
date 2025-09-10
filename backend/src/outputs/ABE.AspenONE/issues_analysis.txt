@@ -1,0 +1,43 @@
+Based on the provided `issues.json` file, here are the counts and status for each type of issue:
+
+**Bugs**
+
+* Total: 238
+* Severity:
+	+ Blocker: 0 ( passes threshold)
+	+ Critical: 1 ( fails threshold)
+	+ Major: 136
+	+ Minor: 99
+	+ Info: 2
+
+Status: Fails threshold due to 1 Critical Bug found, should be 0.
+
+Example messages:
+
+* "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation." (Critical)
+* "Method may be called with null argument" (Major)
+* "Unnecessary use of ternary operator" (Minor)
+
+**Vulnerabilities**
+
+* Total: 0
+* Severity:
+	+ Blocker: 0 ( passes threshold)
+	+ Critical: 0 ( passes threshold)
+	+ Major: 0
+	+ Minor: 0
+	+ Info: 0
+
+Status: Passes both thresholds.
+
+Example messages:
+
+(Note: No vulnerabilities found, so no example messages are provided)
+
+**Code Smells**
+
+* Total: 1
+
+Since there is only one Code Smell issue, and it's not a Bug or Vulnerability, the KPI thresholds do not apply to this category.
+
+Note that the single Code Smell issue is actually marked as "type": "CODE_SMELL", which is not a bug or vulnerability.

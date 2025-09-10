@@ -1,0 +1,326 @@
+{
+  "total": 21476,
+  "p": 1,
+  "ps": 1,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 1,
+    "total": 21476
+  },
+  "effortTotal": 691730,
+  "issues": [
+    {
+      "key": "AZKjiTkPhLozCVcsN0DE",
+      "rule": "cxx:FunctionCognitiveComplexity",
+      "severity": "CRITICAL",
+      "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+      "project": "HysysEngine.Engine",
+      "line": 4834,
+      "hash": "8ea358b166645cfa3904dddaec30ee3f",
+      "textRange": {
+        "startLine": 4834,
+        "endLine": 4834,
+        "startOffset": 0,
+        "endOffset": 146
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4843,
+                "endLine": 4843,
+                "startOffset": 0,
+                "endOffset": 16
+              },
+              "msg": "+1: if statement"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4848,
+                "endLine": 4848,
+                "startOffset": 0,
+                "endOffset": 63
+              },
+              "msg": "+2: iteration statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4851,
+                "endLine": 4851,
+                "startOffset": 0,
+                "endOffset": 39
+              },
+              "msg": "+3: if statement (incl 2 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4854,
+                "endLine": 4854,
+                "startOffset": 0,
+                "endOffset": 71
+              },
+              "msg": "+4: iteration statement (incl 3 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4856,
+                "endLine": 4856,
+                "startOffset": 0,
+                "endOffset": 79
+              },
+              "msg": "+5: if statement (incl 4 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4862,
+                "endLine": 4862,
+                "startOffset": 0,
+                "endOffset": 33
+              },
+              "msg": "+4: if statement (incl 3 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4873,
+                "endLine": 4873,
+                "startOffset": 0,
+                "endOffset": 63
+              },
+              "msg": "+2: iteration statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4876,
+                "endLine": 4876,
+                "startOffset": 0,
+                "endOffset": 39
+              },
+              "msg": "+3: if statement (incl 2 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4879,
+                "endLine": 4879,
+                "startOffset": 0,
+                "endOffset": 71
+              },
+              "msg": "+4: iteration statement (incl 3 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4881,
+                "endLine": 4881,
+                "startOffset": 0,
+                "endOffset": 73
+              },
+              "msg": "+5: if statement (incl 4 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4887,
+                "endLine": 4887,
+                "startOffset": 0,
+                "endOffset": 26
+              },
+              "msg": "+4: if statement (incl 3 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4897,
+                "endLine": 4897,
+                "startOffset": 0,
+                "endOffset": 63
+              },
+              "msg": "+2: iteration statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4900,
+                "endLine": 4900,
+                "startOffset": 0,
+                "endOffset": 39
+              },
+              "msg": "+3: if statement (incl 2 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4903,
+                "endLine": 4903,
+                "startOffset": 0,
+                "endOffset": 71
+              },
+              "msg": "+4: iteration statement (incl 3 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4905,
+                "endLine": 4905,
+                "startOffset": 0,
+                "endOffset": 73
+              },
+              "msg": "+5: if statement (incl 4 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4911,
+                "endLine": 4911,
+                "startOffset": 0,
+                "endOffset": 26
+              },
+              "msg": "+4: if statement (incl 3 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4919,
+                "endLine": 4919,
+                "startOffset": 0,
+                "endOffset": 72
+              },
+              "msg": "+2: iteration statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4922,
+                "endLine": 4922,
+                "startOffset": 0,
+                "endOffset": 88
+              },
+              "msg": "+3: if statement (incl 2 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+              "textRange": {
+                "startLine": 4922,
+                "endLine": 4922,
+                "startOffset": 0,
+                "endOffset": 88
+              },
+              "msg": "+1: logical operator"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cognitive Complexity of this function is 61 which is greater than 15 authorized.",
+      "effort": "6min",
+      "debt": "6min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2024-10-19T04:58:11+0000",
+      "updateDate": "2024-10-19T04:58:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN"
+    }
+  ],
+  "components": [
+    {
+      "key": "HysysEngine.Engine",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "HysysEngine.Engine (C++)",
+      "longName": "HysysEngine.Engine (C++)"
+    },
+    {
+      "key": "HysysEngine.Engine:cpp/oper/EmissionsTank.cpp",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "EmissionsTank.cpp",
+      "longName": "cpp/oper/EmissionsTank.cpp",
+      "path": "cpp/oper/EmissionsTank.cpp"
+    }
+  ],
+  "facets": []
+}

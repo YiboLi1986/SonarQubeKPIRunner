@@ -1,0 +1,89 @@
+{
+  "component": {
+    "key": "HysysEngine.Engine",
+    "name": "HysysEngine.Engine (C++)",
+    "qualifier": "TRK",
+    "measures": [
+      {
+        "metric": "bugs",
+        "value": "200",
+        "bestValue": false
+      },
+      {
+        "metric": "coverage",
+        "value": "0.0",
+        "bestValue": false
+      },
+      {
+        "metric": "security_rating",
+        "value": "1.0",
+        "bestValue": true
+      },
+      {
+        "metric": "duplicated_lines_density",
+        "value": "7.0",
+        "bestValue": false
+      },
+      {
+        "metric": "vulnerabilities",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "new_coverage",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0.0",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "sqale_index",
+        "value": "8161440",
+        "bestValue": false
+      },
+      {
+        "metric": "new_code_smells",
+        "periods": [
+          {
+            "index": 1,
+            "value": "120338",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "120338",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "code_smells",
+        "value": "284930",
+        "bestValue": false
+      },
+      {
+        "metric": "new_duplicated_lines_density",
+        "periods": [
+          {
+            "index": 1,
+            "value": "7.10900222045989",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "7.10900222045989",
+          "bestValue": false
+        }
+      }
+    ]
+  }
+}

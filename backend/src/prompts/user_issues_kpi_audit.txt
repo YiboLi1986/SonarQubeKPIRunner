@@ -1,0 +1,19 @@
+Project: {project}
+
+Tasks:
+1. From issues.json, count:
+   - Bugs: total and by severity (Blocker, Critical, Major, Minor, Info)
+   - Vulnerabilities: total and by severity
+   - Code Smells: total
+
+2. KPI thresholds:
+   - Bugs: Critical + Blocker must be 0
+   - Vulnerabilities: Critical + Blocker must be 0
+
+3. Output format:
+   - Write counts for each type
+   - For Bugs and Vulnerabilities: mark status and explain reason (e.g., "2 Critical Bugs found, should be 0")
+   - Provide up to 3 representative example messages per type (truncated to 100 characters)
+
+ISSUES_JSON:
+{json}

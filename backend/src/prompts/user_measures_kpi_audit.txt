@@ -1,0 +1,25 @@
+Project: {project}
+
+Tasks:
+1. Extract KPI values from measures.json:
+   - Coverage (overall %, new code %)
+   - Duplications (overall %, new code %)
+   - Ratings: Reliability, Security, Maintainability
+   - Bugs count, Vulnerabilities count
+   - Code Smells count
+   - Technical Debt (sqale_index in minutes)
+
+2. Compare against KPI thresholds:
+   - Coverage should be ≥80% overall and ≥85% new code
+   - Duplications should be <3%
+   - Ratings should all be A (1.0)
+   - Bugs = 0
+   - Vulnerabilities = 0
+
+3. Output format:
+   - Use a clear bullet list or table
+   - For each KPI: show actual value, threshold, status, and a short reason (e.g., "Actual 0%, below 80%")
+   - End with a one-sentence overall conclusion about KPI compliance
+
+MEASURES_JSON:
+{json}

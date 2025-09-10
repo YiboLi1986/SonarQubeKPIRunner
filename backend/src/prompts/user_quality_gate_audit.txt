@@ -1,0 +1,20 @@
+Project: {project}
+
+Tasks:
+1. From quality_gate.json, extract:
+   - Overall Quality Gate status (OK/WARN/ERROR)
+   - Failed conditions (metric, comparator, threshold, actual)
+
+2. Compare against KPI rules:
+   - Coverage <80% overall or <85% new code → fail
+   - Duplications ≥3% → fail
+   - New ratings not A → fail
+   - New Critical/Blocker issues >0 → fail
+
+3. Output format:
+   - First, state the overall Quality Gate status
+   - Then, list each failed condition with actual vs threshold, mark status, and reason
+   - End with a one-sentence conclusion on whether the project passes KPI requirements overall
+
+QUALITY_GATE_JSON:
+{json}

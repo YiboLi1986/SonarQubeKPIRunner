@@ -1,0 +1,214 @@
+{
+  "total": 2866,
+  "p": 1,
+  "ps": 1,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 1,
+    "total": 2866
+  },
+  "effortTotal": 15865,
+  "issues": [
+    {
+      "key": "AZixAgELhLozCVcsOK2v",
+      "rule": "cxx:FunctionCognitiveComplexity",
+      "severity": "CRITICAL",
+      "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+      "project": "HysysEngine.IFace",
+      "line": 441,
+      "hash": "160c39e2d50707c470d527fc12b3c0c7",
+      "textRange": {
+        "startLine": 441,
+        "endLine": 441,
+        "startOffset": 0,
+        "endOffset": 53
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 447,
+                "endLine": 447,
+                "startOffset": 0,
+                "endOffset": 72
+              },
+              "msg": "+1: if statement"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 447,
+                "endLine": 447,
+                "startOffset": 0,
+                "endOffset": 72
+              },
+              "msg": "+1: logical operator"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 450,
+                "endLine": 450,
+                "startOffset": 0,
+                "endOffset": 59
+              },
+              "msg": "+2: conditional operator (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 451,
+                "endLine": 451,
+                "startOffset": 0,
+                "endOffset": 38
+              },
+              "msg": "+2: iteration statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 453,
+                "endLine": 453,
+                "startOffset": 0,
+                "endOffset": 44
+              },
+              "msg": "+2: iteration statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 455,
+                "endLine": 455,
+                "startOffset": 0,
+                "endOffset": 34
+              },
+              "msg": "+2: iteration statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 460,
+                "endLine": 460,
+                "startOffset": 0,
+                "endOffset": 50
+              },
+              "msg": "+1: else statement"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 462,
+                "endLine": 462,
+                "startOffset": 0,
+                "endOffset": 40
+              },
+              "msg": "+2: iteration statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 464,
+                "endLine": 464,
+                "startOffset": 0,
+                "endOffset": 37
+              },
+              "msg": "+2: if statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 466,
+                "endLine": 466,
+                "startOffset": 0,
+                "endOffset": 40
+              },
+              "msg": "+2: iteration statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+              "textRange": {
+                "startLine": 469,
+                "endLine": 469,
+                "startOffset": 0,
+                "endOffset": 39
+              },
+              "msg": "+1: else statement"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cognitive Complexity of this function is 18 which is greater than 15 authorized.",
+      "effort": "6min",
+      "debt": "6min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2025-08-16T03:48:24+0000",
+      "updateDate": "2025-08-16T03:48:24+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN"
+    }
+  ],
+  "components": [
+    {
+      "key": "HysysEngine.IFace:src/interfaces/hvector.hpp",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "hvector.hpp",
+      "longName": "src/interfaces/hvector.hpp",
+      "path": "src/interfaces/hvector.hpp"
+    },
+    {
+      "key": "HysysEngine.IFace",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "HysysEngine.IFace",
+      "longName": "HysysEngine.IFace"
+    }
+  ],
+  "facets": []
+}

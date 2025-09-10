@@ -1,0 +1,43 @@
+{
+  "total": 338,
+  "p": 1,
+  "ps": 1,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 1,
+    "total": 338
+  },
+  "effortTotal": 3948,
+  "issues": [
+    {
+      "key": "AZbZo-8hhLozCVcs-9Gr",
+      "rule": "csharpsquid:S3904",
+      "severity": "CRITICAL",
+      "component": "ABE.Feed",
+      "project": "ABE.Feed",
+      "flows": [],
+      "status": "OPEN",
+      "message": "Provide an 'AssemblyVersion' attribute for assembly 'OpenABEExplorer'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2025-05-16T15:06:55+0000",
+      "updateDate": "2025-06-26T13:54:42+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN"
+    }
+  ],
+  "components": [
+    {
+      "key": "ABE.Feed",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "ABE.Feed",
+      "longName": "ABE.Feed"
+    }
+  ],
+  "facets": []
+}

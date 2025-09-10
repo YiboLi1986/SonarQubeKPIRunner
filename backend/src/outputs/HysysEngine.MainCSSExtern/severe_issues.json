@@ -1,0 +1,158 @@
+{
+  "total": 184,
+  "p": 1,
+  "ps": 1,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 1,
+    "total": 184
+  },
+  "effortTotal": 959,
+  "issues": [
+    {
+      "key": "AZACPA4ThLozCVcsUI6R",
+      "rule": "cxx:FunctionCognitiveComplexity",
+      "severity": "CRITICAL",
+      "component": "HysysEngine.MainCSSExtern:src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+      "project": "HysysEngine.MainCSSExtern",
+      "line": 177,
+      "hash": "ab0bb4a218326b532da8eebfde95afff",
+      "textRange": {
+        "startLine": 177,
+        "endLine": 177,
+        "startOffset": 0,
+        "endOffset": 72
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.MainCSSExtern:src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+              "textRange": {
+                "startLine": 180,
+                "endLine": 180,
+                "startOffset": 0,
+                "endOffset": 14
+              },
+              "msg": "+1: if statement"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.MainCSSExtern:src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+              "textRange": {
+                "startLine": 188,
+                "endLine": 188,
+                "startOffset": 0,
+                "endOffset": 24
+              },
+              "msg": "+2: if statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.MainCSSExtern:src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+              "textRange": {
+                "startLine": 191,
+                "endLine": 191,
+                "startOffset": 0,
+                "endOffset": 76
+              },
+              "msg": "+3: if statement (incl 2 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.MainCSSExtern:src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+              "textRange": {
+                "startLine": 191,
+                "endLine": 191,
+                "startOffset": 0,
+                "endOffset": 76
+              },
+              "msg": "+1: logical operator"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.MainCSSExtern:src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+              "textRange": {
+                "startLine": 193,
+                "endLine": 193,
+                "startOffset": 0,
+                "endOffset": 119
+              },
+              "msg": "+4: if statement (incl 3 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.MainCSSExtern:src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+              "textRange": {
+                "startLine": 193,
+                "endLine": 193,
+                "startOffset": 0,
+                "endOffset": 119
+              },
+              "msg": "+1: logical operator"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysEngine.MainCSSExtern:src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+              "textRange": {
+                "startLine": 196,
+                "endLine": 196,
+                "startOffset": 0,
+                "endOffset": 54
+              },
+              "msg": "+5: iteration statement (incl 4 for nesting)"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cognitive Complexity of this function is 17 which is greater than 15 authorized.",
+      "effort": "6min",
+      "debt": "6min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2024-06-10T12:58:53+0000",
+      "updateDate": "2024-06-10T12:58:53+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN"
+    }
+  ],
+  "components": [
+    {
+      "key": "HysysEngine.MainCSSExtern:src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "SLMWrap.cpp",
+      "longName": "src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp",
+      "path": "src/packages/AspenTech.Licensing.SLM.x64.Native.41.0.0/native/include/SLMWrap.cpp"
+    },
+    {
+      "key": "HysysEngine.MainCSSExtern",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "HysysEngine.MainCSSExtern (C++)",
+      "longName": "HysysEngine.MainCSSExtern (C++)"
+    }
+  ],
+  "facets": []
+}

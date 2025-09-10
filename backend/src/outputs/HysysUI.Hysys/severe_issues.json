@@ -1,0 +1,242 @@
+{
+  "total": 1150,
+  "p": 1,
+  "ps": 1,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 1,
+    "total": 1150
+  },
+  "effortTotal": 15624,
+  "issues": [
+    {
+      "key": "AZRnCxdQhLozCVcsdDWx",
+      "rule": "csharpsquid:S3776",
+      "severity": "CRITICAL",
+      "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+      "project": "HysysUI.Hysys",
+      "line": 308,
+      "hash": "9e671aa2f9e394bad755d8e76408576b",
+      "textRange": {
+        "startLine": 308,
+        "endLine": 308,
+        "startOffset": 21,
+        "endOffset": 31
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 313,
+                "endLine": 313,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 321,
+                "endLine": 321,
+                "startOffset": 12,
+                "endOffset": 15
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 325,
+                "endLine": 325,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+2 (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 342,
+                "endLine": 342,
+                "startOffset": 12,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 345,
+                "endLine": 345,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+2 (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 345,
+                "endLine": 345,
+                "startOffset": 34,
+                "endOffset": 36
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 350,
+                "endLine": 350,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+2 (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 355,
+                "endLine": 355,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+2 (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 355,
+                "endLine": 355,
+                "startOffset": 34,
+                "endOffset": 36
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 371,
+                "endLine": 371,
+                "startOffset": 12,
+                "endOffset": 15
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 375,
+                "endLine": 375,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+2 (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 386,
+                "endLine": 386,
+                "startOffset": 12,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+              "textRange": {
+                "startLine": 395,
+                "endLine": 395,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+2 (incl 1 for nesting)"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2025-01-14T22:58:44+0000",
+      "updateDate": "2025-07-29T17:08:56+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN"
+    }
+  ],
+  "components": [
+    {
+      "key": "HysysUI.Hysys",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "HysysUI.Hysys",
+      "longName": "HysysUI.Hysys"
+    },
+    {
+      "key": "HysysUI.Hysys:src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "ElectrolyteWizard.Postgre.vm.cs",
+      "longName": "src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs",
+      "path": "src/HysysShell/Modules/Dialogs/ElectrolyteWizard.Postgre.vm.cs"
+    }
+  ],
+  "facets": []
+}

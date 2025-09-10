@@ -1,0 +1,89 @@
+{
+  "component": {
+    "key": "ABE.Feed",
+    "name": "ABE.Feed",
+    "qualifier": "TRK",
+    "measures": [
+      {
+        "metric": "code_smells",
+        "value": "2822",
+        "bestValue": false
+      },
+      {
+        "metric": "bugs",
+        "value": "185",
+        "bestValue": false
+      },
+      {
+        "metric": "vulnerabilities",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "new_duplicated_lines_density",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0.386918606797658",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0.386918606797658",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "security_rating",
+        "value": "1.0",
+        "bestValue": true
+      },
+      {
+        "metric": "duplicated_lines_density",
+        "value": "3.1",
+        "bestValue": false
+      },
+      {
+        "metric": "sqale_index",
+        "value": "22396",
+        "bestValue": false
+      },
+      {
+        "metric": "new_code_smells",
+        "periods": [
+          {
+            "index": 1,
+            "value": "179",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "179",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "coverage",
+        "value": "0.0",
+        "bestValue": false
+      },
+      {
+        "metric": "new_coverage",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0.0",
+          "bestValue": false
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "component": {
+    "key": "ABE.Core.CSHARP",
+    "name": "ABE.Core (C#)",
+    "qualifier": "TRK",
+    "measures": [
+      {
+        "metric": "new_duplicated_lines_density",
+        "periods": [
+          {
+            "index": 1,
+            "value": "8.56967417584526",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "8.56967417584526",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "vulnerabilities",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "sqale_index",
+        "value": "25357",
+        "bestValue": false
+      },
+      {
+        "metric": "bugs",
+        "value": "23",
+        "bestValue": false
+      },
+      {
+        "metric": "code_smells",
+        "value": "3679",
+        "bestValue": false
+      },
+      {
+        "metric": "duplicated_lines_density",
+        "value": "10.4",
+        "bestValue": false
+      },
+      {
+        "metric": "new_code_smells",
+        "periods": [
+          {
+            "index": 1,
+            "value": "826",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "826",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "coverage",
+        "value": "0.0",
+        "bestValue": false
+      },
+      {
+        "metric": "new_coverage",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0.0",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "security_rating",
+        "value": "1.0",
+        "bestValue": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "total": 1121,
+  "p": 1,
+  "ps": 1,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 1,
+    "total": 1121
+  },
+  "effortTotal": 5994,
+  "issues": [
+    {
+      "key": "AZCDPJ0xhLozCVcsxKXx",
+      "rule": "cxx:FileHeader",
+      "severity": "BLOCKER",
+      "component": "ABE.MainLicensing:DataServices/AZDBAuditSvcs/AZDBAuditSvcs.cpp",
+      "project": "ABE.MainLicensing",
+      "line": 1,
+      "hash": "c06d4acb9099a6d7b28605132a22e8e6",
+      "textRange": {
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 0,
+        "endOffset": 53
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add or update the header of this file.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [],
+      "creationDate": "2024-07-05T14:08:33+0000",
+      "updateDate": "2024-07-05T14:08:33+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN"
+    }
+  ],
+  "components": [
+    {
+      "key": "ABE.MainLicensing",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "ABE.MainLicensing",
+      "longName": "ABE.MainLicensing"
+    },
+    {
+      "key": "ABE.MainLicensing:DataServices/AZDBAuditSvcs/AZDBAuditSvcs.cpp",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "AZDBAuditSvcs.cpp",
+      "longName": "DataServices/AZDBAuditSvcs/AZDBAuditSvcs.cpp",
+      "path": "DataServices/AZDBAuditSvcs/AZDBAuditSvcs.cpp"
+    }
+  ],
+  "facets": []
+}

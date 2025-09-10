@@ -1,0 +1,172 @@
+{
+  "total": 4294,
+  "p": 1,
+  "ps": 1,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 1,
+    "total": 4294
+  },
+  "effortTotal": 23809,
+  "issues": [
+    {
+      "key": "AZU7Ryi7hLozCVcs7D27",
+      "rule": "cxx:FunctionCognitiveComplexity",
+      "severity": "CRITICAL",
+      "component": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+      "project": "Hysys.EnergyAnalyzer",
+      "line": 2305,
+      "hash": "24a279fddd992728b56ed9b39080030e",
+      "textRange": {
+        "startLine": 2305,
+        "endLine": 2305,
+        "startOffset": 0,
+        "endOffset": 142
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+              "textRange": {
+                "startLine": 2309,
+                "endLine": 2309,
+                "startOffset": 0,
+                "endOffset": 48
+              },
+              "msg": "+1: iteration statement"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+              "textRange": {
+                "startLine": 2319,
+                "endLine": 2319,
+                "startOffset": 0,
+                "endOffset": 16
+              },
+              "msg": "+2: if statement (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+              "textRange": {
+                "startLine": 2324,
+                "endLine": 2324,
+                "startOffset": 0,
+                "endOffset": 21
+              },
+              "msg": "+3: if statement (incl 2 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+              "textRange": {
+                "startLine": 2329,
+                "endLine": 2329,
+                "startOffset": 0,
+                "endOffset": 83
+              },
+              "msg": "+4: if statement (incl 3 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+              "textRange": {
+                "startLine": 2329,
+                "endLine": 2329,
+                "startOffset": 0,
+                "endOffset": 83
+              },
+              "msg": "+1: logical operator"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+              "textRange": {
+                "startLine": 2332,
+                "endLine": 2332,
+                "startOffset": 0,
+                "endOffset": 90
+              },
+              "msg": "+5: if statement (incl 4 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+              "textRange": {
+                "startLine": 2332,
+                "endLine": 2332,
+                "startOffset": 0,
+                "endOffset": 90
+              },
+              "msg": "+1: logical operator"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+              "textRange": {
+                "startLine": 2334,
+                "endLine": 2334,
+                "startOffset": 0,
+                "endOffset": 24
+              },
+              "msg": "+1: else statement"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cognitive Complexity of this function is 18 which is greater than 15 authorized.",
+      "effort": "6min",
+      "debt": "6min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2025-02-25T03:58:16+0000",
+      "updateDate": "2025-02-25T03:58:16+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN"
+    }
+  ],
+  "components": [
+    {
+      "key": "Hysys.EnergyAnalyzer",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "Hysys.EnergyAnalyzer",
+      "longName": "Hysys.EnergyAnalyzer"
+    },
+    {
+      "key": "Hysys.EnergyAnalyzer:src/procint/eng/impscenario.cpp",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "impscenario.cpp",
+      "longName": "src/procint/eng/impscenario.cpp",
+      "path": "src/procint/eng/impscenario.cpp"
+    }
+  ],
+  "facets": []
+}

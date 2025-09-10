@@ -1,0 +1,81 @@
+{
+  "total": 593,
+  "p": 1,
+  "ps": 1,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 1,
+    "total": 593
+  },
+  "effortTotal": 6746,
+  "issues": [
+    {
+      "key": "AZeuSP9lhLozCVcs6Fou",
+      "rule": "csharpsquid:S2696",
+      "severity": "CRITICAL",
+      "component": "ABE.Core.CSHARP:src/Source/UserServices/ABECostMapper/ABEITSServer/AZITSReader.cs",
+      "project": "ABE.Core.CSHARP",
+      "line": 411,
+      "hash": "819b6c1b1876df15ffbf9cebd228cb8e",
+      "textRange": {
+        "startLine": 411,
+        "endLine": 411,
+        "startOffset": 12,
+        "endOffset": 46
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "ABE.Core.CSHARP:src/Source/UserServices/ABECostMapper/ABEITSServer/MainMod.cs",
+              "textRange": {
+                "startLine": 18,
+                "endLine": 18,
+                "startOffset": 39,
+                "endOffset": 63
+              }
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Make the enclosing instance method 'static' or remove this set on the 'static' field.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "",
+      "tags": [
+        "multi-threading"
+      ],
+      "creationDate": "2025-06-26T22:07:51+0000",
+      "updateDate": "2025-06-26T22:07:51+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN"
+    }
+  ],
+  "components": [
+    {
+      "key": "ABE.Core.CSHARP",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "ABE.Core (C#)",
+      "longName": "ABE.Core (C#)"
+    },
+    {
+      "key": "ABE.Core.CSHARP:src/Source/UserServices/ABECostMapper/ABEITSServer/MainMod.cs",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "MainMod.cs",
+      "longName": "src/Source/UserServices/ABECostMapper/ABEITSServer/MainMod.cs",
+      "path": "src/Source/UserServices/ABECostMapper/ABEITSServer/MainMod.cs"
+    },
+    {
+      "key": "ABE.Core.CSHARP:src/Source/UserServices/ABECostMapper/ABEITSServer/AZITSReader.cs",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "AZITSReader.cs",
+      "longName": "src/Source/UserServices/ABECostMapper/ABEITSServer/AZITSReader.cs",
+      "path": "src/Source/UserServices/ABECostMapper/ABEITSServer/AZITSReader.cs"
+    }
+  ],
+  "facets": []
+}

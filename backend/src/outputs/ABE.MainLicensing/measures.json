@@ -1,0 +1,74 @@
+{
+  "component": {
+    "key": "ABE.MainLicensing",
+    "name": "ABE.MainLicensing",
+    "qualifier": "TRK",
+    "measures": [
+      {
+        "metric": "new_code_smells",
+        "periods": [
+          {
+            "index": 1,
+            "value": "8",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "8",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "security_rating",
+        "value": "1.0",
+        "bestValue": true
+      },
+      {
+        "metric": "new_duplicated_lines_density",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0.0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "coverage",
+        "value": "0.0",
+        "bestValue": false
+      },
+      {
+        "metric": "bugs",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "code_smells",
+        "value": "57485",
+        "bestValue": false
+      },
+      {
+        "metric": "sqale_index",
+        "value": "301982",
+        "bestValue": false
+      },
+      {
+        "metric": "vulnerabilities",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "duplicated_lines_density",
+        "value": "8.0",
+        "bestValue": false
+      }
+    ]
+  }
+}
