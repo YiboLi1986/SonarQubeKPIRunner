@@ -3,6 +3,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
 
 import json
+import pandas as pd
 from typing import Iterable, Dict, Any
 
 class FileWriter:
@@ -56,3 +57,24 @@ class FileWriter:
         os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
         with open(path, "w", encoding=encoding, newline="\n") as f:
             f.write(content)
+
+    @staticmethod
+    def write_csv(df: "pd.DataFrame", path: str, **kwargs) -> None:
+        """
+        Write a pandas DataFrame to a CSV file.
+
+        Args:
+            df: DataFrame to write.
+            path: Output file path.
+            **kwargs: Additional keyword arguments forwarded to pandas.DataFrame.to_csv
+                (e.g., sep, encoding, index).
+
+        Notes:
+            - Ensures the parent directory exists.
+            - Defaults to UTF-8 with BOM and index=False; users can override via kwargs.
+        """
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+        # Sensible defaults; can be overridden by caller
+        kwargs.setdefault("index", False)
+        kwargs.setdefault("encoding", "utf-8-sig")
+        df.to_csv(path, **kwargs)
