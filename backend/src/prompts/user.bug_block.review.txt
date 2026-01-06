@@ -1,0 +1,42 @@
+A static analysis tool has reported a C/C++ bug.
+
+Bug metadata:
+- Issue key: {issue_key}
+- Type: {type}
+- Severity: {severity}
+- Rule: {rule}
+- Message: {message}
+
+File and location:
+- File path: {file_path}
+- Approximate location: lines {start_line}–{end_line}
+
+Core snippet (the exact code where the issue is reported):
+------------------------------------------------------------
+{code_snippet}
+------------------------------------------------------------
+
+Extended context block (optional surrounding scope, usually the function):
+------------------------------------------------------------
+{context_block}
+------------------------------------------------------------
+
+Guidelines for using context:
+- The core snippet is the **primary and most accurate source** for fixing the issue.
+- The extended context is included **only to help if it contains relevant logic**
+  (e.g., resource ownership, error handling patterns, paired allocations, cleanup logic).
+- **If the context does not help, or adds uncertainty, you may ignore it.**
+
+Your tasks:
+1. Explain what the bug is and how it violates the rule.
+2. Based on the rule and the core snippet (and optionally the context block):
+   - Provide a correct, minimal fix.
+   - Make sure the fix does NOT introduce new static-analysis issues.
+   - Preserve existing semantics.
+3. Provide updated code in:
+   ```cpp
+   // updated code
+4. If you cannot safely produce updated code:
+   - Clearly explain why.
+   - Give concrete, actionable guidance.
+Only propose changes that you can justify using the snippet or the optional context.

@@ -1,0 +1,28 @@
+You are given a SonarQube issue and the related code snippet. Based on the rule and message, propose a safe, minimal, standards-compliant fix and provide the revised code.
+
+Metadata:
+- Issue Key: {issue_key}
+- Severity / Type: {severity} / {type}
+- Rule: {rule}
+- Message: {message}
+- File: {file_path}
+- Lines: {start_line}–{end_line}
+- Created / Updated: {creation_date} / {update_date}
+
+Code snippet (context for the edit location only):
+```
+{code_snippet}
+```
+
+Respond in English. Follow this exact output format (no extra text before or after):
+
+===EXPLANATION===
+- Explain why this is a problem (tie back to the Sonar rule/message) and list concrete, minimal steps to fix it.
+- If the snippet is partial and broader changes are required, provide the smallest viable local fix here and state TODOs for follow-up.
+- Note potential side effects/risks and how to avoid them.
+
+===CODE_UPDATE===
+```
+# Provide the revised code snippet only (as self-contained as possible).
+# Show the final version; do not include Before/After diffs or ellipses.
+```

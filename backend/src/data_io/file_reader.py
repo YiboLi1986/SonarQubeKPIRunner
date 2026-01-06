@@ -4,7 +4,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../.
 
 import json
 import pandas as pd
-from typing import Union
+from typing import Union, List, Dict, Any
 
 class FileReader:
     """
@@ -69,3 +69,31 @@ class FileReader:
         """
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
+        
+    @staticmethod
+    def read_jsonl(path: str) -> List[Dict[str, Any]]:
+        """
+        Read a JSONL (JSON Lines) file and return a list of parsed JSON objects.
+
+        Each non-empty line is expected to be a valid JSON object.
+        Lines that cannot be parsed will be skipped.
+
+        Args:
+            path: Path to the JSONL file.
+
+        Returns:
+            A list of parsed JSON objects (one per line).
+        """
+        objects: List[Dict[str, Any]] = []
+        with open(path, "r", encoding="utf-8") as f:
+            for raw_line in f:
+                line = raw_line.strip()
+                if not line:
+                    continue
+                try:
+                    obj = json.loads(line)
+                    objects.append(obj)
+                except Exception:
+                    # Skip malformed lines silently; this is a debug helper.
+                    continue
+        return objects

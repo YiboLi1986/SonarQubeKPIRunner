@@ -26,7 +26,6 @@ env/
 venv/
 ENV/
 *.env
-*.venv
 
 # ========================
 # IDE settings
@@ -42,11 +41,12 @@ ENV/
 # ========================
 # Project-specific ignores
 # ========================
-# Runtime output (if generated, not source-controlled)
+# Runtime outputs (generated artifacts, not source-controlled)
 backend/src/outputs/
 
-# SonarQube local cache / coverage
+# SonarQube local cache / scanner outputs
 .sonar/
+.scannerwork/
 coverage/
 *.coverage
 *.coveragexml
@@ -54,7 +54,19 @@ coverage/
 # ========================
 # Power BI / Excel temporary files
 # ========================
+# Dashboards and spreadsheets are environment-specific
 *.pbix
 *.xlsx
 *.xlsm
 ~$*.xls*
+
+# ========================
+# Python version managers
+# ========================
+.python-version
+
+# ========================
+# Local secrets (DO NOT COMMIT)
+# ========================
+# Local LLM / GitHub Models configuration
+backend/src/config/github_models.local.json

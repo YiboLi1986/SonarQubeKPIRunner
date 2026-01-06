@@ -4,12 +4,24 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../.
 
 import json
 import pandas as pd
-from typing import Iterable, Dict, Any
+from contextlib import contextmanager
+from typing import Iterable, Dict, Any, Callable
 
 class FileWriter:
     """
     Utility class for writing files, especially JSONL output.
     """
+    @staticmethod
+    def write_json(data: Any, path: str, ensure_ascii: bool = False, pretty: bool = True) -> None:
+        """
+        Write any JSON-serializable object (dict or list) to a file.
+        """
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+        with open(path, "w", encoding="utf-8", newline="\n") as f:
+            if pretty:
+                json.dump(data, f, ensure_ascii=ensure_ascii, indent=2)
+            else:
+                json.dump(data, f, ensure_ascii=ensure_ascii)
 
     @staticmethod
     def write_jsonl(records: Iterable[Dict[str, Any]], path: str, ensure_ascii: bool = False) -> None:
@@ -78,3 +90,35 @@ class FileWriter:
         kwargs.setdefault("index", False)
         kwargs.setdefault("encoding", "utf-8-sig")
         df.to_csv(path, **kwargs)
+
+    @staticmethod
+    def append_jsonl(record: Dict[str, Any], path: str, ensure_ascii: bool = False) -> None:
+        """
+        Append a single JSON-serializable dict to a JSONL file.
+
+        Args:
+            record: A single dict to be written as one line of JSON.
+            path: Output file path.
+            ensure_ascii: If True, non-ASCII characters are escaped.
+        """
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+        with open(path, "a", encoding="utf-8", newline="\n") as f:
+            f.write(json.dumps(record, ensure_ascii=ensure_ascii) + "\n")
+
+    @staticmethod
+    @contextmanager
+    def jsonl_writer(path: str, mode: str = "w", ensure_ascii: bool = False) -> Callable[[Any], None]:
+        """
+        Context manager that opens a JSONL file once and yields a `write_one(obj)` function.
+        Each call to `write_one(obj)` writes one JSON object per line.
+
+        Usage:
+            with FileWriter.jsonl_writer("out.jsonl") as write_one:
+                for obj in objs:
+                    write_one(obj)
+        """
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+        with open(path, mode, encoding="utf-8", newline="\n") as f:
+            def _write_one(obj: Any) -> None:
+                f.write(json.dumps(obj, ensure_ascii=ensure_ascii) + "\n")
+            yield _write_one

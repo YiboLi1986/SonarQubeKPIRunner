@@ -1,0 +1,50 @@
+Below is one SonarQube bug report extracted from our C++ codebase.
+
+====================  BUG SUMMARY  ====================
+Issue Key: {issue_key}
+Severity: {severity}
+Type: {type}
+Rule: {rule}
+Message: {message}
+
+File: {file_path}
+Start Line: {start_line}
+End Line: {end_line}
+
+====================  CODE SNIPPET  ====================
+{code_snippet}
+
+====================  CONTEXT BLOCK  ====================
+{context_block}
+
+====================  CANDIDATE CALL SITES  ====================
+{call_sites_section}
+
+========================================================
+TASK:
+
+1. Determine which call sites shown above are actually relevant to triggering this bug.
+   - Consider control flow, file location, class ownership, and the provided context range.
+   - Consider the callee signature when provided.
+
+2. Explain your reasoning step by step.
+   - You MUST include a single line in your explanation using exactly this format:
+     `Relevant callsites: #...`
+     For example: `Relevant callsites: #1, #3, #5`
+   - Briefly explain why each selected call site is relevant to the bug.
+   - Also briefly explain why the remaining call sites are less relevant or not relevant
+     (for example: different class, different resource ownership, or clearly unrelated control flow).
+
+3. Provide a safe and minimal code fix (if applicable).
+   - If needed, output your fix inside a fenced code block:
+     ```cpp
+     // patch here
+     ```
+
+4. If no fix is needed, write: "No code update required" and explain why.
+
+Return your answer in JSON:
+{{
+  "explanation": "...",
+  "code_update": "```cpp\n...\n```"
+}}

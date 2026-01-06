@@ -5,7 +5,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../.
 import pathlib
 from typing import List, Dict, Any
 
-from backend.src.sonarqube.url_builder import SonarKpiUrlBuilder
+from backend.src.sonarqube.sonar_kpi_builder import SonarKpiBuilder
 from backend.src.data_io.file_writer import FileWriter
 
 
@@ -47,7 +47,7 @@ class SonarBatchSaver:
         outdir = self._project_dir(project_key)
 
         # Reuse your existing builder with built-in fetch/getters
-        builder = SonarKpiUrlBuilder(self.base_url, project_key)
+        builder = SonarKpiBuilder(self.base_url, project_key)
         # If your builder supports auth/timeout, set them here:
         # e.g., builder.auth = (self.token, "") if self.token else None
         # and pass timeout when calling fetchers if needed.

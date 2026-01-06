@@ -7,7 +7,7 @@ import urllib.parse
 from typing import Dict, List, Optional, Any
 
 
-class SonarKpiUrlBuilder:
+class SonarKpiBuilder:
     """
     Build SonarQube Web API URLs for KPI extraction (coverage, duplication,
     quality gate status, severe issues, trends, etc.), without auth or I/O.
@@ -160,7 +160,7 @@ if __name__ == "__main__":
     base_url = "http://sonarqube1.rnd.aspentech.com:9000"
     project_key = "HysysEngine.Engine"
 
-    builder = SonarKpiUrlBuilder(base_url, project_key)
+    builder = SonarKpiBuilder(base_url, project_key)
 
     print("=== Minimal KPI URLs ===")
     urls = builder.minimal_kpi_urls()
